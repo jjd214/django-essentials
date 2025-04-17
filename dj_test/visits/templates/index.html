@@ -1,0 +1,14 @@
+{% load static %}
+<html>
+<head>
+  <title>DJ test</title>
+  <link rel="icon" href="{% static 'favicon.png' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <h1>
+    <img src="{% static 'logo.png' %}"> Hello world
+  </h1>
+  <p>I've been visited {{ nums_of_visits }} time{{ nums_of_visits|pluralize }}</p>
+</body>
+</html>
